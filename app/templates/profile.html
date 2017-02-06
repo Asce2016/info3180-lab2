@@ -1,0 +1,95 @@
+{% extends "base.html" %}
+
+{% block main %}
+
+<style type = "text/css">
+
+img{
+float: left;
+border: 2px solid black;
+border-radius: 10px;
+}
+
+#profilebox{
+
+  left:500px;
+  float: left;
+  margin-left: 50px;
+  border: 1px solid black;
+  border-radius: 10px;
+}
+
+#name{
+padding-left: 15px;
+border-bottom: 1px solid black;
+}
+
+#date{
+  margin-left: 10px;
+  margin-right: 10px;
+  padding-left: 5px;
+  border-bottom: 1px solid black;
+
+}
+
+#userinfo{
+  margin-left: 10px;
+  margin-right: 10px;
+  padding-left: 5px;
+  border-bottom: 1px solid black;
+
+
+}
+
+#status{
+padding-left: 15px;
+padding-right: 15px;
+}
+
+</style>
+
+
+
+
+
+
+
+
+       <h1> Profile </h1>
+
+  <hr />
+
+       <div id="right">
+         <img src="{{ url_for('static',filename="unique.jpg")}}"width="270" height="270" ></img>
+
+         </div>
+
+
+
+      <div id="profilebox">
+           <div id="name">
+             <p>Alfanso Unique Barr<p>
+           </div>
+
+           <div id="date">
+             <p> Today's Date is {{Date}}</p>
+           </div>
+
+           <div id="userinfo">
+
+            <p> <strong> UserName:<strong> SimplyUnique</p>
+            <p><strong> ID Number:<strong> 620075858</p>
+            <p><strong> AGE:<strong> 20</p>
+            <p><strong> Gender:<strong> Male </p>
+
+           </div>
+
+           <div id="status">
+                 <p> There is only one me, there is one only God.<p>
+
+          </div>
+
+      </div>
+
+
+{% endblock %}
